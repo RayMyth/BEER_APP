@@ -80,6 +80,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         new BeerHistoryFragment()).commit();
                 break;
             case R.id.nav_logout:
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intent);
                 break;
         }
 
