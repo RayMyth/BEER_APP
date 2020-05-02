@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BEER_APP</string>
+    <string name="app_name">HomeBrew Helper</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -12,4 +12,58 @@
     <string name="title_items_list">Items</string>
     <string name="title_items_detail">Items Detail</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="main_welcome_text">Welcome Back!</string>
+    <string name="main_updates_text">Here Are Your Updates</string>
+    <string name="main_updates">(Display updates here)</string>
+    <string name="main_create_beer">Create New Beer!</string>
+    <string name="separator">Separator</string>
+    <string name="main_current_text">Brews In The Making</string>
+    <string name="main_current_beers">(Display current beers here)</string>
+    <string name="user_profile_name">User Name</string>
+    <string name="user_profile_finished_text">Finished Brews</string>
+    <string name="user_profile_finished_beers">(Display Finished Beers)</string>
+    <string name="user_profile_info">(Display User Info)</string>
+    <string name="create_new_header">Let\'s Get Brewing!</string>
+    <string name="create_new_choice">Choose Your Brew</string>
+    <!--Spinner Strings-->
+    <string-array name="create_new_array">
+        <item>Irish Red Ale </item>
+        <item>Stone IPA</item>
+        <item>Stout</item>
+        <item>Brown Ale</item>
+        <item>Hefewiesen</item>
+        <item>Imperial Stout</item>
+        <item>Pilsner</item>
+        <item>Porter</item>
+    </string-array>
+    <!--Strings related to PreTutorial-->
+    <string name="Start_Brew">Start Brewing!</string>
+    <string name="PreTutorialTitle"> Before We Start...</string>
+    <string name="TutorialTitle"> Basic HomeBrewing Tutorial</string>
+    <string name="PreTutorialHeader">Make Sure you have: </string>
+    <string name="BrewPot">3 Gallon Brew Pot(or larger)</string>
+    <string name ="Fermenter">6.5 Gallon Primary Fermenter</string>
+    <string name ="SiphonHose">Siphon hose/ Racking Cane</string>
+    <string name ="LargeSpoon">Large Spoon or Paddle</string>
+    <string name ="AirLock">Air Lock</string>
+    <string name ="Hydrometer">Hydrometer</string>
+    <string name ="Thermometer">Thermometer</string>
+    <string name ="Cleanser">Cleanser</string>
+    <string name ="Sanitizer">Sanitizer</string>
+    <string name ="Bottles">Bottles (or kegging system)</string>
+    <string name="PreTutorialReminder">Reminder - Not Included in Kit:</string>
+    <string name="Yeast">Yeast</string>
+    <string name="PrimingSugar">Priming Sugar</string>
+    <string name="BottleCaps">Bottle Caps</string>
+    <!--Strings related to tutorial-->
+    <string name="Finish">Finish</string>
+    <string name="Step1">Step 1</string>
+    <!-- placeholder for server text-->
+    <string name="InsStep1">Sanitize Equipment</string>
+
+    <!--Strings related to Reminders-->
+    <string name="Default_Reminder_Text">You have no beer reminders</string>
+    <string name="Reminder_Text">Your beer:____ will be ready for [stage 2,3] in [x] days </string>
 </resources>
