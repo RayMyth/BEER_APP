@@ -1,15 +1,68 @@
 <resources>
-    <string name="app_name">BEER_APP</string>
+    <string name="app_name">HomeBrew Helper</string>
     <!-- Strings related to login -->
+    <string name="prompt_username">Name</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
+    <string name="prompt_age">I am 21 years old or older</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_up">Sign Up</string>
+    <string name="action_sign_up_header">Sign Up And Get Brewing!</string>
+    <string name="action_register">Don\'t have an account? Sign up here!</string>
+    <string name="action_sign_up_already">Already have an account? Sign up here!</string>
+    <string name="welcome">"Welcome!"</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="title_items_list">Items</string>
     <string name="title_items_detail">Items Detail</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="main_welcome_text">Welcome Back!</string>
+    <string name="main_updates_text">Here Are Your Updates</string>
+    <string name="main_updates">(Display updates here)</string>
+    <string name="main_create_beer">Create New Beer!</string>
+    <string name="separator">Separator</string>
+    <string name="main_current_text">Brews In The Making</string>
+    <string name="main_current_beers">(Display current beers here)</string>
+    <string name="user_profile_name">User Name</string>
+    <string name="user_profile_finished_text">Finished Brews</string>
+    <string name="user_profile_finished_beers">(Display Finished Beers)</string>
+    <string name="user_profile_info">(Display User Info)</string>
+    <string name="create_new_header">Let\'s Get Brewing!</string>
+    <string name="create_new_choice">Choose Your Brew</string>
+    <!--Spinner-->
+    <string-array name="create_new_array">
+        <item> </item>
+        <item>Irish Red Ale</item>
+    </string-array>
+    <!--Tutorial Strings-->
+    <string name="Yeast_Reminder">Important!: Remember to remove Yeast from fridge for 4-8 hours before brewing</string>
+    <string name="nav_user_name">User Name</string>
+    <string name="TutorialTitle">Beer Brewing Tutorial</string>
+    <string name="Instructions"></string>
+    <string name="Finish">Done</string>
+    <string name="Start_Brew">Start Brewing!</string>
+    <string name="BottleCaps">Bottle caps</string>
+    <string name="PrimingSugar">Priming sugar</string>
+    <string name="Yeast">Yeast, Irish Moss</string>
+    <string name="PreTutorialReminder">Reminder: These are not included</string>
+    <string name="Bottles">Bottles</string>
+    <string name="Sanitizer">Sanitizer</string>
+    <string name="Cleanser">Cleanser</string>
+    <string name="Thermometer">Thermometer</string>
+    <string name="Hydrometer">Hydrometer</string>
+    <string name="AirLock">Airlock</string>
+    <string name="LargeSpoon">Large Spoon</string>
+    <string name="SiphonHose">Siphon Hose</string>
+    <string name="Fermenter">Fermenter</string>
+    <string name="BrewPot">Brew Pot</string>
+    <string name="PreTutorialHeader">Make Sure you have</string>
+    <string name="PreTutorialTitle">Before we start...</string>
+    <string name="toFermentingTutorial">Go To Fermenting Phase</string>
+    <string name="toBottlingTutorial">Go To Bottling Phase</string>
+    <string name="Fermenting_Tutorial">Fermenting Tutorial</string>
+    <string name="Bottling_tutorial">Bottling Tutorial</string>
+    <string name="Test">TEST</string>
 </resources>

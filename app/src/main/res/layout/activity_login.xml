@@ -5,11 +5,14 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/barrel_background"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:theme="@style/AppTheme.NoActionBar"
     tools:context=".ui.login.LoginActivity">
+
 
     <EditText
         android:id="@+id/username"
@@ -25,43 +28,49 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
-        app:layout_constraintVertical_bias="0.302" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="36dp"
         android:layout_marginEnd="24dp"
 
+        android:autofillHints=""
         android:hint="@string/prompt_password"
-        android:imeActionLabel="@string/action_sign_in_short"
+        android:imeActionLabel="@string/action_sign_in"
         android:imeOptions="actionDone"
         android:inputType="textPassword"
         android:selectAllOnFocus="true"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495" />
 
     <Button
-        android:id="@+id/login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/login_button"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
         android:layout_gravity="start"
         android:layout_marginStart="48dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="48dp"
-        android:enabled="false"
+        android:background="@drawable/barrel_color"
+        android:clickable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:fontFamily="@font/fondamento"
         android:text="@string/action_sign_in"
+        android:textColor="@color/Beer_Launcher_background"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.117" />
 
     <ProgressBar
         android:id="@+id/loading"
@@ -80,30 +89,39 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.532" />
 
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="89dp"
-        android:layout_height="85dp"
-        android:contentDescription="TODO"
-        app:layout_constraintBottom_toBottomOf="@+id/loading"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/beer_launcher" />
-
     <EditText
         android:id="@+id/Title_text"
         android:layout_width="291dp"
         android:layout_height="120dp"
+        android:autofillHints=""
+        android:background="@android:color/transparent"
+        android:clickable="true"
         android:ems="10"
-        android:fontFamily="casual"
+        android:focusable="true"
+        android:fontFamily="@font/fondamento"
+        android:hint="@string/title_activity_main"
         android:inputType="textPersonName"
-        android:text="HomeBrew Helper"
+        android:text="@string/app_name"
         android:textAlignment="center"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton4"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.218"
-        tools:layout_editor_absoluteX="40dp" />
+        app:layout_constraintVertical_bias="0.115" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="107dp"
+        android:fontFamily="@font/fondamento"
+        android:gravity="center"
+        android:text="@string/action_register"
+        android:textColor="@color/Beer_Launcher_background"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
