@@ -27,23 +27,27 @@ public class BrewingTutorialFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v =inflater.inflate(R.layout.brewing_tutorial_fragment, container, false);
+
         return v;
 
     }
     /*written by Devin*/
-    public void InstructionStage(int state) {
-
+    @Override
+    public void onStart() {
+        super.onStart();
 
         brewing_instructions = (TextView) getView().findViewById(R.id.brew_tutorial);
+
         End =(Button) getView().findViewById(R.id.FinishButton);
+
         End.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ref = FirebaseDatabase.getInstance().getReference().child("Instructions").child("Brewing");
+                ref = FirebaseDatabase.getInstance().getReference().child("instructions").child("brewing");
                 ref.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        String step0 =dataSnapshot.child("step_0").getValue().toString();
+                        String step0 =dataSnapshot.child("Step_0").getValue().toString();
                         brewing_instructions.setText(step0);
                     }
 
